@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+/* resets */
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* resets */
+
+/* custom colors and fonts */
+:root{
+    --soft-blue:hsl(231, 69%, 60%);
+    --white: rgb(249, 249, 249);
+    --soft-red:hsl(0, 94%, 66%);
+    --light-blue:hsl(229, 8%, 60%);
+    --very-dark-blue:hsl(229, 31%, 21%);
+    --ff-font:'Rubik', sans-serif;
+    --box-shadow: 0px 3px 10px rgba(0,0,0,0.3)
+}
+/*x custom colors and fonts x*/
+/* base style */
+html, body{
+    scroll-behavior: smooth;
+    font-family: var(--ff-font);
+    font-size: 1.2rem;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+input,
+button{
+    font-family: inherit;
+}
+.btn-danger{
+    background: var(--soft-red);
+}
+/*x base style x*/
+header{
+    position: relative;
+    z-index: 100;
+}
+header ul li a{
+    margin: 0 7px;
+    transition: all .3s ease;
+    color: var(--very-dark-blue);
+    text-transform: uppercase;
+}
+/* active */
+header .navbar.active{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: var(--very-dark-blue);
+    opacity: 0.8;
+    min-height: 100vh;
+    color: var(--white);
+    z-index: -1 !important;
+}
+header .navbar-brand.active{
+    z-index: 1000;
+    filter: brightness(0) invert(1);
+}
+header .navbar-brand img{
+    width: 200px;
+}
+
+/* active */
+header ul.active{
+    width: calc(100vw - 10vw);
+    margin: 20vh 0 auto 0;
+}
+/* active */
+header ul li.active{
+    border-top:  1px solid var(--light-blue);
+    padding: 10px 0px;
+    text-align: center;
+}
+header ul li a{
+    color: var(--very-dark-blue);
+}
+header ul li a.active{
+    color: var(--white);
+}
+header ul li a:hover{
+    color: var(--soft-red);
+}
+header .btn-red{
+    text-transform: capitalize;
+    font-size: 1rem;
+    padding: 6px 20px;
+    box-shadow: var(--box-shadow);
+    border: 2px solid transparent;
+}
+header .btn-red.active{
+     /* active */
+     margin: 20px 0px 0;
+     display: block;
+     background: transparent;
+     border: 2px solid var(--white);
+     box-shadow: none;
+     text-transform: uppercase;
+}
+header .btn-red:hover{
+    background: transparent;
+    border: 2px solid var(--soft-red);
+    color: var(--soft-red);
+}
+header .fa-close.active{
+    z-index: 100;
+    color: white;
+    position: absolute;
+    right: 20px;
+    top: 35px;
+}
