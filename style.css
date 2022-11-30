@@ -18,7 +18,7 @@
     --light-blue-border:hsl(229, 8%, 80%);
     --very-dark-blue:hsl(229, 31%, 21%);
     --ff-font:'Rubik', sans-serif;
-    --box-shadow: 0px 3px 10px rgba(0,0,0,0.3);
+    --box-shadow: 0rem 0.1875rem 0.625rem rgba(0,0,0,0.3);
 }
 /*x custom colors and fonts x*/
 
@@ -34,7 +34,7 @@ html, body  {
 .faq__header  p {
     max-width: 30rem;
     line-height: 1.8;
-    margin: 10px auto;
+    margin: 0.625rem auto;
 }
 
 
@@ -49,8 +49,8 @@ html, body  {
 
 .bg {
     display: inline-block;
-    min-height: 300px;
-    min-width: 300px;
+    min-height: 18.75rem;
+    min-width: 18.75rem;
 }
 
 .flex-center {
@@ -70,7 +70,7 @@ html, body  {
 }
 
 .btn-primary:hover {
-    outline: 1px solid var(--soft-blue);
+    outline: 0.0625rem solid var(--soft-blue);
     transition : all .3s ease;
     background: transparent;
     color:var(--soft-blue);
@@ -84,7 +84,7 @@ html, body  {
 }
 
 .btn-secondary:hover {   
-    outline: 1px solid var(--soft-blue);
+    outline: 0.0625rem solid var(--soft-blue);
     transition : all .3s ease;
     background: transparent;
     color: var(--soft-white);
@@ -194,8 +194,8 @@ figcaption {
 .features__tab .row .tab1:first-child {
     position: relative;
     width: auto;
-    border-top: 1px solid var(--light-blue);
-    border-bottom: 1px solid var(--light-blue);
+    border-top: 0.0625rem solid var(--light-blue);
+    border-bottom: 0.0625rem solid var(--light-blue);
 }
 
 
@@ -203,7 +203,7 @@ figcaption {
     content: "";
     display: inline-block;
     min-width: 100%;
-    min-height: 4px;
+    min-height: 0.25rem;
     background: var(--soft-red);
     animation : bottomLine .4s ease forwards;
 }
@@ -213,8 +213,8 @@ figcaption {
 .features__tab .row .tab2:nth-child(2) {
     position: relative;
     width: auto;
-    border-top: 1px solid var(--light-blue);
-    border-bottom: 1px solid var(--light-blue);
+    border-top: 0.0625rem solid var(--light-blue);
+    border-bottom: 0.0625rem solid var(--light-blue);
 }
 
 
@@ -222,15 +222,15 @@ figcaption {
     content: "";
     display: inline-block;
     min-width: 100%;
-    min-height: 4px;
+    min-height: 0.25rem;
     background: var(--soft-red);
     animation : bottomLine .4s ease forwards;
 }
 .features__tab .row .tab3:last-child {
     position: relative;
     width: auto;
-    border-top: 1px solid var(--light-blue);
-    border-bottom: 1px solid var(--light-blue);
+    border-top: 0.0625rem solid var(--light-blue);
+    border-bottom: 0.0625rem solid var(--light-blue);
 }
 
 
@@ -238,7 +238,7 @@ figcaption {
     content: "";
     display: inline-block;
     min-width: 100%;
-    min-height: 4px;
+    min-height: 0.25rem;
     background: var(--soft-red);
     animation : bottomLine .4s ease forwards;
 }
@@ -305,13 +305,13 @@ figcaption {
 
 /* Extension  */
 .card-img-top {
-    width: 150px;
-    height: 150px;
+    width: 9.375rem;
+    height: 9.375rem;
 }
 
 .extension__body .card-footer {
     background: transparent;
-    border-top: 4px dotted var(--light-blue-border);
+    border-top: 0.25rem dotted var(--light-blue-border);
     padding: 0.9375rem;
 }
 
@@ -335,7 +335,7 @@ figcaption {
 .newsletter .btn-danger:hover {
     background: var(--white);
     border: none ;
-    border-radius: 4px;
+    border-radius: 0.25rem;
 }
 /*x newsletter x*/
 
@@ -346,14 +346,14 @@ footer {
 
 footer .nav-list {
     list-style: none;
-    gap: 20px;
+    gap: 1.25rem;
 } 
 
 footer .nav-list li a {
     text-decoration: none;
     color: var(--white);
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 0.125rem;
 }
 
 footer .nav-list li a:hover {
@@ -390,7 +390,7 @@ footer .logo figure img {
 /* animation */
 
 
-@media screen and (min-width : 768px) {
+@media screen and (min-width : 48rem) {
     .features__tab .row .tabs:first-child, 
     .features__tab .row .tabs:nth-child(2), 
     .features__tab .row .tabs:last-child  {
